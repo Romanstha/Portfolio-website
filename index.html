@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="scrollToTop-btn">
@@ -31,7 +32,9 @@
 
     <section class="main" id="main">
       <div class="content">
-        <h2>Hello, I'm<br /><span>Roman Shrestha</span></h2>
+        <h2 style="color: black">
+          Hello, I'm<br /><span>Roman Shrestha</span>
+        </h2>
         <div class="animated-text">
           <h3>Web Designer</h3>
           <h3>Frontend Developer</h3>
@@ -52,7 +55,7 @@
             ><i class="fab fa-github"></i
           ></a>
           <a
-            href="https://www.linkedin.com/in/roman-shrestha-58a9b2276/"
+            href="https://www.linkedin.com/in/roman-shrestha-9692872a9/"
             target="_blank"
             ><i class="fab fa-linkedin"></i
           ></a>
@@ -66,13 +69,21 @@
       </div>
       <div class="content">
         <div class="column col-left reveal">
-          <div class="img-card">
+          <div class="img-card" data-aos="fade-right">
             <img src="images/photo.jpg" alt="" />
           </div>
         </div>
         <div class="column col-right reveal">
-          <h2 class="content-title">Hey There! I'm Roman Shrestha</h2>
-          <p class="paragraph-text">
+          <h2
+            class="content-title"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
+            Hey There! I'm Roman Shrestha
+          </h2>
+          <p class="paragraph-text" data-aos="fade-left">
             Greetings! I'm a passionate and versatile web professional dedicated
             to creating exceptional online experiences. With a foundation in
             HTML, CSS, JavaScript, jQuery, and PHP, I blend technical expertise
@@ -94,7 +105,12 @@
         <h2 class="section-title">My Skills</h2>
       </div>
       <div class="content">
-        <div class="column col-left reveal">
+        <div
+          class="column col-left reveal"
+          data-aos="fade-up-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <h2 class="content-title">My Skills and Experiences</h2>
           <p class="skill-content">
             I bring a wealth of expertise to web development with a strong
@@ -161,7 +177,7 @@
         </p>
       </div>
       <div class="content">
-        <div class="card reveal">
+        <div class="card reveal" data-aos="zoom-in">
           <div class="service-icon">
             <i class="fas fa-palette"></i>
           </div>
@@ -175,7 +191,7 @@
             </p>
           </div>
         </div>
-        <div class="card reveal">
+        <div class="card reveal" data-aos="zoom-in">
           <div class="service-icon">
             <i class="fas fa-file-code"></i>
           </div>
@@ -189,7 +205,7 @@
             </p>
           </div>
         </div>
-        <div class="card reveal">
+        <div class="card reveal" data-aos="zoom-in">
           <div class="service-icon">
             <i class="fas fa-object-group"></i>
           </div>
@@ -321,5 +337,9 @@
     </footer>
 
     <script src="script.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
